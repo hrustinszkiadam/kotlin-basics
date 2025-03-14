@@ -22,4 +22,10 @@ fun main() {
     products.removeProduct("körte")
     products.listProducts() // Termékek: alma, szilva, narancs,
     println(halado.harmadik("A kotlin egy modern programozási nyelv")) // programozási
+    val counter = halado.Counter()
+    counter.increment()
+    counter.increment()
+    counter.increment()
+    counter.decrement()
+    println(counter.getValue()) // 2
 }

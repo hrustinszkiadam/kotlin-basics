@@ -45,4 +45,21 @@ class Halado {
     fun harmadik(sentence: String): String {
         return sentence.split(" ").maxByOrNull { it.length } ?: ""
     }
+
+    // negyedik
+    inner class Counter {
+        private var count = 0
+
+        fun increment() {
+            count++
+        }
+
+        fun decrement() {
+            count--
+        }
+
+        fun getValue(): Int {
+            return count
+        }
+    }
 }
