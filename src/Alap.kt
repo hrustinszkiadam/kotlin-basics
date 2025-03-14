@@ -32,4 +32,23 @@ class Alap {
             println("Páratlan")
         }
     }
+
+    fun harmadik() {
+        print("Adj meg egy számot: ")
+        var szam: Int
+
+        while (true) {
+            try {
+                szam = readln().toInt()
+                break
+            } catch (e: NumberFormatException) {
+                print("Ez nem egy szám! Próbáld újra: ")
+            }
+        }
+
+        for (i in 1..szam) {
+            print("$i ")
+        }
+        println()
+    }
 }
