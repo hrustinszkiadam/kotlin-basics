@@ -62,4 +62,12 @@ class Halado {
             return count
         }
     }
+
+    fun otodik(): List<String> {
+        val data = listOf("alma", "körte", "szilva")
+        println("Betöltés...")
+        Thread.sleep(1000)
+
+        return data
+    }
 }

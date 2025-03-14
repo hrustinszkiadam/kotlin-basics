@@ -28,4 +28,5 @@ fun main() {
     counter.increment()
     counter.decrement()
     println(counter.getValue()) // 2
+    println(halado.otodik()) // [alma, körte, szilva] 1 sec után
 }
