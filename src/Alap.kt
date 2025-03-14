@@ -1,30 +1,41 @@
 class Alap {
-    fun elso() {
+    private fun getString(): String {
         print("Add meg a neved: ")
-        var nev: String = readln()
+        var str: String = readln()
 
         while (true) {
-            if(nev.isNotEmpty()) break
+            if(str.isNotEmpty()) break
 
             print("Próbáld újra: ")
-            nev = readln()
+            str = readln()
         }
 
-        println("Hello, $nev!")
+        return str
     }
 
-    fun masodik() {
-        print("Adj meg egy számot: ")
-        var szam: Int
+    private fun getInt(): Int {
+        print("Adj meg egy egész számot: ")
+        var num: Int
 
         while (true) {
             try {
-                szam = readln().toInt()
+                num = readln().toInt()
                 break
             } catch (e: NumberFormatException) {
                 print("Ez nem egy szám! Próbáld újra: ")
             }
         }
+
+        return num
+    }
+
+    fun elso() {
+        val nev: String = getString()
+        println("Hello, $nev!")
+    }
+
+    fun masodik() {
+        val szam: Int = getInt()
 
         if (szam % 2 == 0) {
             println("Páros")
@@ -34,17 +45,7 @@ class Alap {
     }
 
     fun harmadik() {
-        print("Adj meg egy számot: ")
-        var szam: Int
-
-        while (true) {
-            try {
-                szam = readln().toInt()
-                break
-            } catch (e: NumberFormatException) {
-                print("Ez nem egy szám! Próbáld újra: ")
-            }
-        }
+        val szam: Int = getInt()
 
         for (i in 1..szam) {
             print("$i ")
