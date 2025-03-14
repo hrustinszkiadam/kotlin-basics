@@ -12,4 +12,24 @@ class Alap {
 
         println("Hello, $nev!")
     }
+
+    fun masodik() {
+        print("Adj meg egy számot: ")
+        var szam: Int
+
+        while (true) {
+            try {
+                szam = readln().toInt()
+                break
+            } catch (e: NumberFormatException) {
+                print("Ez nem egy szám! Próbáld újra: ")
+            }
+        }
+
+        if (szam % 2 == 0) {
+            println("Páros")
+        } else {
+            println("Páratlan")
+        }
+    }
 }
