@@ -13,4 +13,8 @@ class Kozephalado {
     fun harmadik(numbers: List<Int>): Int {
         return numbers.max()
     }
+
+    fun negyedik(text: String): Boolean {
+        return text.reversed() == text
+    }
 }
