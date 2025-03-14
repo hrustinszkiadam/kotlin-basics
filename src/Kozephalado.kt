@@ -17,4 +17,9 @@ class Kozephalado {
     fun negyedik(text: String): Boolean {
         return text.reversed() == text
     }
+
+    fun otodik(text: String): Int {
+        val vowels = "aeiou"
+        return text.count { vowels.contains(it) }
+    }
 }
