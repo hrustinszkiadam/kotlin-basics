@@ -21,4 +21,5 @@ fun main() {
     products.addProduct("narancs")
     products.removeProduct("körte")
     products.listProducts() // Termékek: alma, szilva, narancs,
+    println(halado.harmadik("A kotlin egy modern programozási nyelv")) // programozási
 }

@@ -41,4 +41,8 @@ class Halado {
             println()
         }
     }
+
+    fun harmadik(sentence: String): String {
+        return sentence.split(" ").maxByOrNull { it.length } ?: ""
+    }
 }
