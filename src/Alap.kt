@@ -4,7 +4,7 @@ class Alap {
         var str: String = readln()
 
         while (true) {
-            if(str.isNotEmpty()) break
+            if (str.isNotEmpty()) break
 
             print("Próbáld újra: ")
             str = readln()

@@ -11,11 +11,11 @@ class Halado {
         private val productList = products ?: mutableListOf()
 
         fun addProduct(product: String) {
-            if(product.isEmpty()) {
+            if (product.isEmpty()) {
                 println("A termék neve nem lehet üres!")
                 return
             }
-            if(productList.contains(product)) {
+            if (productList.contains(product)) {
                 println("A(z) $product már szerepel a listában!")
                 return
             }
@@ -23,11 +23,11 @@ class Halado {
         }
 
         fun removeProduct(product: String) {
-            if(product.isEmpty()) {
+            if (product.isEmpty()) {
                 println("A termék neve nem lehet üres!")
                 return
             }
-            if(!productList.contains(product)) {
+            if (!productList.contains(product)) {
                 println("A(z) $product nem szerepel a listában!")
                 return
             }
@@ -35,7 +35,7 @@ class Halado {
         }
 
         fun listProducts() {
-            if(productList.isEmpty()) return
+            if (productList.isEmpty()) return
             print("Termékek: ")
             productList.forEach { print("$it, ") }
             println()
