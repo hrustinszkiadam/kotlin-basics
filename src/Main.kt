@@ -3,4 +3,5 @@ fun main() {
     alap.elso()
     alap.masodik()
     alap.harmadik()
+    alap.negyedik()
 }

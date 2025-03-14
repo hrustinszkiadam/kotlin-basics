@@ -52,4 +52,15 @@ class Alap {
         }
         println()
     }
+
+    fun negyedik() {
+        val szam: Int = getInt()
+
+        var sum = 0
+        for (i in 1..szam) {
+            sum += i
+        }
+
+        println(sum)
+    }
 }
