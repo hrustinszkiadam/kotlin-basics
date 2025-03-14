@@ -10,4 +10,5 @@ fun main() {
     println(kozephalado.elso(5, 10)) // 10
     val alice = kozephalado.Person("Alice", 25)
     alice.printInfo() // Név: Alice, Életkor: 25
+    println(kozephalado.harmadik(listOf(1, 3, 2, 5, 4))) // 5
 }

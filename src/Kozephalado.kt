@@ -9,4 +9,8 @@ class Kozephalado {
             println("Név: $name, Életkor: $age")
         }
     }
+
+    fun harmadik(numbers: List<Int>): Int {
+        return numbers.max()
+    }
 }
