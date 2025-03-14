@@ -13,4 +13,8 @@ fun main() {
     println(kozephalado.harmadik(listOf(1, 3, 2, 5, 4))) // 5
     println(kozephalado.negyedik("level")) // true
     println(kozephalado.otodik("courage")) // 4
+
+    val halado = Halado()
+    val book = halado.Book("A kis herceg", "Antoine de Saint-Exupéry")
+    book.printInfo()
 }
