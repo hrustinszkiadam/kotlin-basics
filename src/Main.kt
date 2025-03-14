@@ -4,4 +4,5 @@ fun main() {
     alap.masodik()
     alap.harmadik()
     alap.negyedik()
+    alap.otodik()
 }

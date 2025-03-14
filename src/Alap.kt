@@ -63,4 +63,11 @@ class Alap {
 
         println(sum)
     }
+
+    fun otodik() {
+        val nevek = listOf("Józsi", "Pista", "Géza", "Béla", "Józsi", "Pista", "Géza", "Béla")
+        for (nev in nevek) {
+            println(nev)
+        }
+    }
 }
