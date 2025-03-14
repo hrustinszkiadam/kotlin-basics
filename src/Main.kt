@@ -17,4 +17,8 @@ fun main() {
     val halado = Halado()
     val book = halado.Book("A kis herceg", "Antoine de Saint-Exupéry")
     book.printInfo()
+    val products = halado.Products(mutableListOf("alma", "körte", "szilva"))
+    products.addProduct("narancs")
+    products.removeProduct("körte")
+    products.listProducts() // Termékek: alma, szilva, narancs,
 }
